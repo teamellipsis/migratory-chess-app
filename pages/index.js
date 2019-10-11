@@ -14,7 +14,7 @@ const ChessGame = dynamic(
 class Index extends React.Component {
     render() {
         return (
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
+            <div>
                 <ChessGame>
                     {({
                         position,
@@ -23,20 +23,22 @@ class Index extends React.Component {
                         dropSquareStyle,
                         onDragOverSquare,
                     }) => (
-                            <Chessboard
-                                id="Chessboard"
-                                width={320}
-                                position={position}
-                                onDrop={onDrop}
-                                boardStyle={{
-                                    borderRadius: "5px",
-                                    boxShadow: `0 5px 15px rgba(0, 0, 0, 0.5)`
-                                }}
-                                squareStyles={squareStyles}
-                                dropSquareStyle={dropSquareStyle}
-                                onDragOverSquare={onDragOverSquare}
-                                transitionDuration={50}
-                            />
+                            <div style={{ display: 'flex', justifyContent: 'center' }}>
+                                <Chessboard
+                                    id="Chessboard"
+                                    width={320}
+                                    position={position}
+                                    onDrop={onDrop}
+                                    boardStyle={{
+                                        borderRadius: "5px",
+                                        boxShadow: `0 5px 15px rgba(0, 0, 0, 0.5)`
+                                    }}
+                                    squareStyles={squareStyles}
+                                    dropSquareStyle={dropSquareStyle}
+                                    onDragOverSquare={onDragOverSquare}
+                                    transitionDuration={50}
+                                />
+                            </div>
                         )}
                 </ChessGame>
             </div>
