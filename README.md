@@ -1,13 +1,15 @@
-# migratory-skeleton-app
+# migratory-chess-app
 
-Use [React Redux](https://react-redux.js.org/) to preserve application's UI state.
+Use [Node.js VM](https://nodejs.org/docs/latest-v8.x/api/vm.html) to preserve application's states.
 
 - Frontend - [Next.js](https://nextjs.org/) + [React.js](https://reactjs.org/) + [Material-UI](https://material-ui.com/)
+- Chess board - [Chessboard.jsx](https://chessboardjsx.com/)
+- Chess library - [chess.js](https://github.com/jhlywa/chess.js)
 
 ## Usage
 ``` bash
-$ git clone https://github.com/teamellipsis/migratory-skeleton-app
-$ cd migratory-skeleton-app
+$ git clone https://github.com/teamellipsis/migratory-chess-app
+$ cd migratory-chess-app
 ```
 Run development
 ``` bash
@@ -37,6 +39,6 @@ $ npm run server-win
 # Without specifing app name. This will use package.json -> name as the app name.
 $ npm run release
 # Or specify app name as first argument.
-$ npm run release -- "App Name"
+$ npm run release -- "Chess Game"
 ```
 Build file will put into `build` directory.
