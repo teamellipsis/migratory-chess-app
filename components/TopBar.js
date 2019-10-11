@@ -9,13 +9,6 @@ import Button from '@material-ui/core/Button';
 const styles = {
     root: {
         flexGrow: 1,
-        paddingTop: 56,
-        "@media (min-width:0px) and (orientation: landscape)": {
-            paddingTop: 48,
-        },
-        "@media (min-width:600px)": {
-            paddingTop: 64,
-        },
     },
     grow: {
         flexGrow: 1,
